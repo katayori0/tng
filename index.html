@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単語</title>
+    <meta name="description"content="単語">
+
+    <!-- フォント -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Noto+Serif+KR&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/sanitize.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- アイコン -->
+    <script src="https://kit.fontawesome.com/8a7c2d361f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+
+
+<div class="main">
+
+    <div id="num"></div>
+
+    <div class="tango glass">
+        <div id="hng">한국</div>
+        <div id="jpn">表示</div>
+    </div>
+    <div class="btn">
+        <div id="wrong">×</div>
+        <div id="right">〇</div>
+    </div>
+
+</div>
+
+<div class="menu">
+    
+    <input type="checkbox" id="sound">
+    <label for="sound"></label>
+
+    <input type="checkbox" id="list">
+    <label for="list"><i class="fa-solid fa-bars"></i></label>
+    <div class="box glass">
+        <div id="select">
+            <input type='radio' id='wd1' name='radio' checked><label for='wd1'>1</label>
+            <input type='radio' id='wd2' name='radio'><label for='wd2'>2</label>
+            <input type='radio' id='wd3' name='radio'><label for='wd3'>3</label>
+        </div>    
+        <div id="ep">Ep.57　58</div>
+    </div> 
+
+    <input type="checkbox" id="setting">
+    <label for="setting"><i class="fa-solid fa-gear"></i></label>
+    <div class="box glass">
+        <div class="back">
+            <input type="file" id="change"><label for="change">背景画像変更</label>
+            <button id="clear" class="fa-solid fa-trash"></button>
+        </div>
+        <div>
+            <p>背景画像を変更できます。(5MB以内)</p>
+            <p>自身のページでのみ反映されます。</p>
+            <p>セキュリティ上の安全の為、インターネットに上げられないものは避けてください。</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script src="./app.js"></script>
+</body>
+</html>
